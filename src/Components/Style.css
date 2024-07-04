@@ -1,0 +1,82 @@
+.expense-tracker-container {
+  background-image: url('img/R.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  color: azure;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  
+}
+
+
+.card {
+  width: 80%;
+  margin: 10px; 
+  background-color: #ff8800; 
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.1 s ease;
+  border: 2.5px solid#ffff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-body {
+  padding: 20px;
+  
+}
+
+.marked-card {
+  background-color: #00cc00;
+}
+
+.button-animation {
+  transition: transform 0.3s ease;
+}
+
+.button-animation:hover {
+  transform: scale(1.1);
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.fade-enter-active {
+  opacity: 2;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.marked-card {
+  background-color: #5ff66c; 
+}
+
+.marked-button,
+button.marked-button {
+  background-color: #94eb87;
+}
+
+.marked-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
